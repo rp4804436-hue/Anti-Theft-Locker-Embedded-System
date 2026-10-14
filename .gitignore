@@ -1,0 +1,24 @@
+# Compiled binaries and object files
+*.o
+*.elf
+*.bin
+*.hex
+
+# Build directories
+.pio/
+build/
+bin/
+
+# IDE files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Arduino temporary files
+*.tmp
+*.bak

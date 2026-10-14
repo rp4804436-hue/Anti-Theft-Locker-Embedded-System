@@ -1,0 +1,36 @@
+[INIT] Firmware execution initialized.
+[KEYPAD] 1
+[KEYPAD] 2
+[KEYPAD] 3
+[KEYPAD] 4
+[KEYPAD] #
+[AUTH] Comparing input: 1234
+[AUTH] PIN verified successfully.
+[LOCK] Auto-lock interval reached. Re-engaging.
+[KEYPAD] 7
+[KEYPAD] 7
+[KEYPAD] 7
+[KEYPAD] #
+[AUTH] Comparing input: 777
+[AUTH] Verification failed. Attempt: 1
+[KEYPAD] 8
+[KEYPAD] 8
+[KEYPAD] 8
+[KEYPAD] #
+[AUTH] Comparing input: 888
+[AUTH] Verification failed. Attempt: 2
+[KEYPAD] 9
+[KEYPAD] 9
+[KEYPAD] 9
+[KEYPAD] #
+[AUTH] Comparing input: 999
+[AUTH] Verification failed. Attempt: 3
+[ALERT] 3 Failed attempts registered. Lockout started.
+[KEYPAD] 1
+[KEYPAD] 2
+[KEYPAD] 3
+[KEYPAD] 4
+[KEYPAD] #
+[AUTH] Comparing input: 1234
+[AUTH] PIN verified successfully.
+[LOCK] Auto-lock interval reached. Re-engaging.

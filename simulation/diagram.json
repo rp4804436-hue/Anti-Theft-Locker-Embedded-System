@@ -1,0 +1,46 @@
+{
+  "version": 1,
+  "author": "Embedded Developer",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 100, "left": 100, "attrs": {} },
+    { "type": "wokwi-membrane-keypad", "id": "keypad", "top": -80, "left": -200, "attrs": {} },
+    { "type": "wokwi-lcd1602", "id": "lcd", "top": -80, "left": 250, "attrs": { "pins": "i2c" } },
+    { "type": "wokwi-servo", "id": "servo", "top": 280, "left": 400, "attrs": {} },
+    { "type": "wokwi-buzzer", "id": "buzzer", "top": 150, "left": 420, "attrs": {} },
+    { "type": "wokwi-led", "id": "led_green", "top": 100, "left": -80, "attrs": { "color": "green" } },
+    { "type": "wokwi-led", "id": "led_red", "top": 160, "left": -80, "attrs": { "color": "red" } },
+    { "type": "wokwi-resistor", "id": "r1", "top": 120, "left": -40, "attrs": { "value": "220" } },
+    { "type": "wokwi-resistor", "id": "r2", "top": 180, "left": -40, "attrs": { "value": "220" } }
+  ],
+  "connections": [
+    [ "keypad:R1", "uno:9", "green", [ "v0" ] ],
+    [ "keypad:R2", "uno:8", "green", [ "v0" ] ],
+    [ "keypad:R3", "uno:7", "green", [ "v0" ] ],
+    [ "keypad:R4", "uno:6", "green", [ "v0" ] ],
+    [ "keypad:C1", "uno:5", "blue", [ "v0" ] ],
+    [ "keypad:C2", "uno:4", "blue", [ "v0" ] ],
+    [ "keypad:C3", "uno:3", "blue", [ "v0" ] ],
+    [ "keypad:C4", "uno:2", "blue", [ "v0" ] ],
+
+    [ "lcd:GND", "uno:GND.1", "black", [ "v0" ] ],
+    [ "lcd:VCC", "uno:5V", "red", [ "v0" ] ],
+    [ "lcd:SDA", "uno:A4", "orange", [ "v0" ] ],
+    [ "lcd:SCL", "uno:A5", "yellow", [ "v0" ] ],
+
+    [ "servo:GND", "uno:GND.2", "black", [ "v0" ] ],
+    [ "servo:V+", "uno:5V", "red", [ "v0" ] ],
+    [ "servo:PWM", "uno:10", "purple", [ "v0" ] ],
+
+    [ "buzzer:1", "uno:GND.3", "black", [ "v0" ] ],
+    [ "buzzer:2", "uno:13", "gray", [ "v0" ] ],
+
+    [ "uno:11", "r1:1", "green", [ "v0" ] ],
+    [ "r1:2", "led_green:A", "green", [ "v0" ] ],
+    [ "led_green:C", "uno:GND.1", "black", [ "v0" ] ],
+
+    [ "uno:12", "r2:1", "red", [ "v0" ] ],
+    [ "r2:2", "led_red:A", "red", [ "v0" ] ],
+    [ "led_red:C", "uno:GND.1", "black", [ "v0" ] ]
+  ]
+}

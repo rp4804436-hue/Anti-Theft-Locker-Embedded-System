@@ -1,0 +1,6 @@
+Wokwi Simulation Instructions:
+1. Open https://wokwi.com/projects/new/arduino-uno
+2. Click on the 'diagram.json' tab, erase existing contents, and paste simulation/diagram.json.
+3. Switch to 'sketch.ino', erase existing code, and paste arduino_code/AntiTheftLocker/AntiTheftLocker.ino.
+4. Click 'Library Manager' (the feather icon or libraries tab) and ensure 'Keypad' and 'LiquidCrystal I2C' are present.
+5. Press the green Play icon to test.

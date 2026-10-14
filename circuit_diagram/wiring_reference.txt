@@ -1,0 +1,21 @@
+ELECTRICAL WIRING SUMMARY
+
+Arduino UNO Pin      Connected Device Pin
+---------------------------------------------
+Pin D2          -->  Keypad Column 4
+Pin D3          -->  Keypad Column 3
+Pin D4          -->  Keypad Column 2
+Pin D5          -->  Keypad Column 1
+Pin D6          -->  Keypad Row 4
+Pin D7          -->  Keypad Row 3
+Pin D8          -->  Keypad Row 2
+Pin D9          -->  Keypad Row 1
+Pin D10         -->  Servo Signal (Orange)
+Pin D11         -->  220 Ohm Resistor -> Green LED Anode
+Pin D12         -->  220 Ohm Resistor -> Red LED Anode
+Pin D13         -->  Active Buzzer Positive Pin
+Pin A4          -->  I2C LCD SDA
+Pin A5          -->  I2C LCD SCL
+5V Bus          -->  LCD VCC, Servo VCC (Red)
+GND Bus         -->  LCD GND, Servo GND (Brown/Black),
+                     Buzzer Ground, LED Cathodes
